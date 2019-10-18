@@ -7,6 +7,7 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.levislv.androiddemo.fitssystemwindows.FitsSystemWindowsActivity;
 import com.levislv.androiddemo.windowsoftinputmode.WindowSoftInputModeActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.btn_to_fitssystemwindows).setOnClickListener(this);
 
         findViewById(R.id.btn_00).setOnClickListener(this);
         findViewById(R.id.btn_01).setOnClickListener(this);
@@ -30,6 +33,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_to_fitssystemwindows:
+                startActivity(new Intent(this, FitsSystemWindowsActivity.class));
+                break;
+
             case R.id.btn_00:
                 startActivity(new Intent(this, WindowSoftInputModeActivity.class)
                         .putExtra("with_scroll", true)

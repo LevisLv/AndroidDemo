@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".fitssystemwindows.FitsSystemWindowsActivity" />
+
         <activity android:name=".windowsoftinputmode.WindowSoftInputModeActivity" />
     </application>
 </manifest>
