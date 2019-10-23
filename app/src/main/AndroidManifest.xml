@@ -21,6 +21,8 @@
 
         <activity android:name=".fitssystemwindows.FitsSystemWindowsActivity" />
 
+        <activity android:name=".systemuivisibility.SystemUiVisibilityActivity" />
+
         <activity android:name=".windowsoftinputmode.WindowSoftInputModeActivity" />
     </application>
 </manifest>

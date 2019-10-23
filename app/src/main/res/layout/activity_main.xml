@@ -29,6 +29,23 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center_vertical"
+            android:text="system ui visibility" />
+
+        <Button
+            android:id="@+id/btn_to_systemuivisibility"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="to SystemUiVisibility"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
             android:text="window soft input mode" />
 
         <LinearLayout
