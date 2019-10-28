@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".clipchildren.ClipChildrenActivity" />
+
         <activity android:name=".fitssystemwindows.FitsSystemWindowsActivity" />
 
         <activity android:name=".systemuivisibility.SystemUiVisibilityActivity" />

@@ -8,6 +8,7 @@ import android.view.WindowManager;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.levislv.androiddemo.clipchildren.ClipChildrenActivity;
 import com.levislv.androiddemo.fitssystemwindows.FitsSystemWindowsActivity;
 import com.levislv.androiddemo.systemuivisibility.SystemUiVisibilityActivity;
 import com.levislv.androiddemo.windowsoftinputmode.WindowSoftInputModeActivity;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.btn_to_clipchildren).setOnClickListener(this);
 
         findViewById(R.id.btn_to_fitssystemwindows).setOnClickListener(this);
 
@@ -37,6 +40,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_to_clipchildren:
+                startActivity(new Intent(this, ClipChildrenActivity.class));
+                break;
+
             case R.id.btn_to_fitssystemwindows:
                 startActivity(new Intent(this, FitsSystemWindowsActivity.class));
                 break;

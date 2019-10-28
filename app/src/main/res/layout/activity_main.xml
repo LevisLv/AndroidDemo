@@ -12,6 +12,23 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center_vertical"
+            android:text="clip children" />
+
+        <Button
+            android:id="@+id/btn_to_clipchildren"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="to ClipChildren"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
             android:text="fits system windows" />
 
         <Button
