@@ -46,6 +46,23 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center_vertical"
+            android:text="scrollbar style" />
+
+        <Button
+            android:id="@+id/btn_to_scrollbarstyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="to ScrollbarStyle"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
             android:text="system ui visibility" />
 
         <Button

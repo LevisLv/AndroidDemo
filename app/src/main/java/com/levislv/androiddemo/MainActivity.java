@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.levislv.androiddemo.clipchildren.ClipChildrenActivity;
 import com.levislv.androiddemo.fitssystemwindows.FitsSystemWindowsActivity;
+import com.levislv.androiddemo.scrollbarstyle.ScrollbarStyleActivity;
 import com.levislv.androiddemo.systemuivisibility.SystemUiVisibilityActivity;
 import com.levislv.androiddemo.windowsoftinputmode.WindowSoftInputModeActivity;
 
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity
         findViewById(R.id.btn_to_clipchildren).setOnClickListener(this);
 
         findViewById(R.id.btn_to_fitssystemwindows).setOnClickListener(this);
+
+        findViewById(R.id.btn_to_scrollbarstyle).setOnClickListener(this);
 
         findViewById(R.id.btn_to_systemuivisibility).setOnClickListener(this);
 
@@ -46,6 +49,10 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.btn_to_fitssystemwindows:
                 startActivity(new Intent(this, FitsSystemWindowsActivity.class));
+                break;
+
+            case R.id.btn_to_scrollbarstyle:
+                startActivity(new Intent(this, ScrollbarStyleActivity.class));
                 break;
 
             case R.id.btn_to_systemuivisibility:
