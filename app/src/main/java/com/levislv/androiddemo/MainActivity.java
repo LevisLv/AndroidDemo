@@ -42,66 +42,47 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_to_clipchildren:
-                startActivity(new Intent(this, ClipChildrenActivity.class));
-                break;
-
-            case R.id.btn_to_fitssystemwindows:
-                startActivity(new Intent(this, FitsSystemWindowsActivity.class));
-                break;
-
-            case R.id.btn_to_scrollbarstyle:
-                startActivity(new Intent(this, ScrollbarStyleActivity.class));
-                break;
-
-            case R.id.btn_to_systemuivisibility:
-                startActivity(new Intent(this, SystemUiVisibilityActivity.class));
-                break;
-
-            case R.id.btn_00:
-                startActivity(new Intent(this, WindowSoftInputModeActivity.class)
-                        .putExtra("with_scroll", true)
-                        .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_UNSPECIFIED));
-                break;
-            case R.id.btn_01:
-                startActivity(new Intent(this, WindowSoftInputModeActivity.class)
-                        .putExtra("with_scroll", false)
-                        .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_UNSPECIFIED));
-                break;
-            case R.id.btn_10:
-                startActivity(new Intent(this, WindowSoftInputModeActivity.class)
-                        .putExtra("with_scroll", true)
-                        .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE));
-                break;
-            case R.id.btn_11:
-                startActivity(new Intent(this, WindowSoftInputModeActivity.class)
-                        .putExtra("with_scroll", false)
-                        .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE));
-                break;
-            case R.id.btn_20:
-                startActivity(new Intent(this, WindowSoftInputModeActivity.class)
-                        .putExtra("with_scroll", true)
-                        .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN));
-                break;
-            case R.id.btn_21:
-                startActivity(new Intent(this, WindowSoftInputModeActivity.class)
-                        .putExtra("with_scroll", false)
-                        .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN));
-                break;
-            case R.id.btn_30:
-                startActivity(new Intent(this, WindowSoftInputModeActivity.class)
-                        .putExtra("with_scroll", true)
-                        .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING));
-                break;
-            case R.id.btn_31:
-                startActivity(new Intent(this, WindowSoftInputModeActivity.class)
-                        .putExtra("with_scroll", false)
-                        .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING));
-                break;
-            default:
-
-                break;
+        int id = v.getId();
+        if (id == R.id.btn_to_clipchildren) {
+            startActivity(new Intent(this, ClipChildrenActivity.class));
+        } else if (id == R.id.btn_to_fitssystemwindows) {
+            startActivity(new Intent(this, FitsSystemWindowsActivity.class));
+        } else if (id == R.id.btn_to_scrollbarstyle) {
+            startActivity(new Intent(this, ScrollbarStyleActivity.class));
+        } else if (id == R.id.btn_to_systemuivisibility) {
+            startActivity(new Intent(this, SystemUiVisibilityActivity.class));
+        } else if (id == R.id.btn_00) {
+            startActivity(new Intent(this, WindowSoftInputModeActivity.class)
+                    .putExtra("with_scroll", true)
+                    .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_UNSPECIFIED));
+        } else if (id == R.id.btn_01) {
+            startActivity(new Intent(this, WindowSoftInputModeActivity.class)
+                    .putExtra("with_scroll", false)
+                    .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_UNSPECIFIED));
+        } else if (id == R.id.btn_10) {
+            startActivity(new Intent(this, WindowSoftInputModeActivity.class)
+                    .putExtra("with_scroll", true)
+                    .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE));
+        } else if (id == R.id.btn_11) {
+            startActivity(new Intent(this, WindowSoftInputModeActivity.class)
+                    .putExtra("with_scroll", false)
+                    .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE));
+        } else if (id == R.id.btn_20) {
+            startActivity(new Intent(this, WindowSoftInputModeActivity.class)
+                    .putExtra("with_scroll", true)
+                    .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN));
+        } else if (id == R.id.btn_21) {
+            startActivity(new Intent(this, WindowSoftInputModeActivity.class)
+                    .putExtra("with_scroll", false)
+                    .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN));
+        } else if (id == R.id.btn_30) {
+            startActivity(new Intent(this, WindowSoftInputModeActivity.class)
+                    .putExtra("with_scroll", true)
+                    .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING));
+        } else if (id == R.id.btn_31) {
+            startActivity(new Intent(this, WindowSoftInputModeActivity.class)
+                    .putExtra("with_scroll", false)
+                    .putExtra("soft_input_adjust", WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING));
         }
     }
 }

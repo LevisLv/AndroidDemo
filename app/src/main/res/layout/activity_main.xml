@@ -8,83 +8,41 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center_vertical"
-            android:text="clip children" />
-
         <Button
             android:id="@+id/btn_to_clipchildren"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:text="to ClipChildren"
-            android:textAllCaps="false" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center_vertical"
-            android:text="fits system windows" />
+            android:textAllCaps="false"
+            android:textSize="36sp" />
 
         <Button
             android:id="@+id/btn_to_fitssystemwindows"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:text="to FitsSystemWindows"
-            android:textAllCaps="false" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center_vertical"
-            android:text="scrollbar style" />
+            android:textAllCaps="false"
+            android:textSize="36sp" />
 
         <Button
             android:id="@+id/btn_to_scrollbarstyle"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:text="to ScrollbarStyle"
-            android:textAllCaps="false" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center_vertical"
-            android:text="system ui visibility" />
+            android:textAllCaps="false"
+            android:textSize="36sp" />
 
         <Button
             android:id="@+id/btn_to_systemuivisibility"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:text="to SystemUiVisibility"
-            android:textAllCaps="false" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center_vertical"
-            android:text="window soft input mode" />
+            android:textAllCaps="false"
+            android:textSize="36sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:orientation="horizontal">
 
             <Button
@@ -93,7 +51,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="with scroll\nadjust unspecified"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_01"
@@ -101,12 +60,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="without scroll\nadjust unspecified"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:orientation="horizontal">
 
             <Button
@@ -115,7 +75,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="with scroll\nadjust resize"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_11"
@@ -123,12 +84,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="without scroll\nadjust resize"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:orientation="horizontal">
 
             <Button
@@ -137,7 +99,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="with scroll\nadjust pan"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_21"
@@ -150,7 +113,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:orientation="horizontal">
 
             <Button
@@ -159,7 +122,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="with scroll\nadjust nothing"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_31"
@@ -167,11 +131,93 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="without scroll\nadjust nothing"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textSize="18sp" />
         </LinearLayout>
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_gallery_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="GALLERY_ID"
+                android:text="12082"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_to_gallery_camera"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:text="to gallery camera"
+                android:textAllCaps="false"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_gallery_path"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="GALLERY_PATH"
+                android:text="/storage/emulated/10/DCIM/Camera/usb_usb_video_1721084761170_1721114946678.mp4"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_to_gallery_recent_all"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:text="to gallery recent all"
+                android:textAllCaps="false"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_request_permission"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="request permission"
+            android:textAllCaps="false"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_query_all_media"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="query all media"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_cancel_query_all_media"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="cancel"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

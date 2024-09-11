@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- WindowBackground，可以设置@drawable，颜色引用（@color），不能设置颜色值（#fffffff），
+    Window区域说明：Window涵盖整个屏幕显示区域，包括StatusBar的区域。当windowOverscan=false时，window的区域比Activity多出StatusBar，当windowOverscan=true时，window区域与Activity相同 -->
+        <!--        <item name="android:windowBackground">@color/colorAccent</item>-->
+        <!-- status bar color -->
+        <!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+        <!-- activity 是否能在status bar 底部绘制 -->
+        <!--        <item name="android:windowOverscan">true</item>-->
+        <!-- 让status bar透明，相当于statusBarColor=transparent + windowOverscan=true -->
+        <!--        <item name="android:windowTranslucentStatus">true</item>-->
+        <!-- 改变status bar 文字颜色，true黑色，false白色，API 23可用 -->
+        <!--        <item name="android:windowLightStatusBar">true</item>-->
+
+        <!-- 底部虚拟导航栏颜色（navigation bar 背景色。仅作用于 Lollipop 及更高版本。） -->
+        <!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+        <!-- 让底部导航栏变半透明灰色，覆盖在Activity之上（默认false，activity会居于底部导航栏顶部），如果设为true，navigationBarColor 失效 -->
+        <!--        <item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+</resources>
